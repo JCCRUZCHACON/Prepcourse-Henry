@@ -63,6 +63,8 @@ function agregarStringInvertida() {
       }
       return invertida;
    }*/
+
+   
    String.prototype.reverse = function(){
       return this.split("").reverse().join("")  // SOLUCION 2 : PROGRAMACION FUNCIONAL
    }

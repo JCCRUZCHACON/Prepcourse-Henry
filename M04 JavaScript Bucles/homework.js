@@ -168,6 +168,9 @@ function esPrimo(num) {
    // [Nota]: los números negativos, 0 y 1 NO son números primos.
    // Tu código:
 
+   //if type(valor) != int
+   //return none
+
    if(num <= 1){
       return false;
     }else{
@@ -179,7 +182,7 @@ function esPrimo(num) {
    return true;
    }
 }
-console.log(esPrimo(7));
+console.log(esPrimo(3));
    
 
 

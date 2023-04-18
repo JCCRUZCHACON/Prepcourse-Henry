@@ -6,6 +6,15 @@ function deObjetoAarray(objeto) {
    // Estos elementos debe ser cada par clave:valor del objeto recibido.
    // [EJEMPLO]: {D: 1, B: 2, C: 3} ---> [['D', 1], ['B', 2], ['C', 3]].
    // Tu código:
+
+   var matriz = [];                       //PRIMERA SOLUCION CON OF IN
+   for (var propiedad in objeto) {
+      matriz.push([propiedad,objeto[propiedad]]);
+   }
+   return matriz;
+
+
+   /*return Object.entries(objeto); */         //SEGUNDA SOLUCION CON EL METODO OBJECT.ENTRIES
 }
 
 function numberOfCharacters(string) {
@@ -41,6 +50,7 @@ function deleteAbc(string) {
    // Tu tarea es eliminar las letras "a", "b" y "c" del string recibido.
    // Retorna el string sin estas letras.
    // Tu código:
+   
 }
 
 function sortArray(arrayOfStrings) {
@@ -58,6 +68,7 @@ function buscoInterseccion(array1, array2) {
    // Si no tienen elementos en común, retornar un arreglo vacío.
    // [PISTA]: los arreglos no necesariamente tienen la misma longitud.
    // Tu código:
+   return arry1 
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
